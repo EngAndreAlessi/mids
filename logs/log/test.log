@@ -8,982 +8,988 @@ R Version: 4.3.2 (2023-10-31 ucrt)
 Machine: ANDRE x86-64
 Operating System: Windows 10 x64 build 22631
 Base Packages: stats graphics grDevices utils datasets methods base Other
-Packages: logr_1.3.5 tibble_3.2.1 readr_2.1.5 igraph_1.6.0
-Log Start Time: 2024-02-08 08:51:38.143356
+Packages: logr_1.3.5 lubridate_1.9.3 forcats_1.0.0 stringr_1.5.1 dplyr_1.1.4
+purrr_1.0.2 readr_2.1.5 tidyr_1.3.0 tibble_3.2.1 ggplot2_3.4.4 tidyverse_2.0.0
+igraph_1.6.0
+Log Start Time: 2024-02-08 20:27:44.36411
 =========================================================================
 
 Starting test - loading every instance and finding one solution
 
-NOTE: Log Print Time:  2024-02-08 08:51:39.167311
-NOTE: Elapsed Time: 0.702082872390747 secs
+NOTE: Log Print Time:  2024-02-08 20:27:44.369495
+NOTE: Elapsed Time: 0.0020289421081543 secs
 
 Testing instance brock200-2 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:40.221498
-NOTE: Elapsed Time: 1.05418705940247 secs
+NOTE: Log Print Time:  2024-02-08 20:27:44.384703
+NOTE: Elapsed Time: 0.0152080059051514 secs
 
 Found solution length: 5
 
-NOTE: Log Print Time:  2024-02-08 08:51:40.474223
-NOTE: Elapsed Time: 0.252724885940552 secs
+NOTE: Log Print Time:  2024-02-08 20:27:44.545825
+NOTE: Elapsed Time: 0.16112208366394 secs
 
 Testing instance brock200-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:40.477212
-NOTE: Elapsed Time: 0.00298905372619629 secs
+NOTE: Log Print Time:  2024-02-08 20:27:44.546991
+NOTE: Elapsed Time: 0.00116610527038574 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:51:41.532773
-NOTE: Elapsed Time: 1.05556106567383 secs
+NOTE: Log Print Time:  2024-02-08 20:27:44.616583
+NOTE: Elapsed Time: 0.0695919990539551 secs
 
 Testing instance brock400-2 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:41.537193
-NOTE: Elapsed Time: 0.00442004203796387 secs
+NOTE: Log Print Time:  2024-02-08 20:27:44.618132
+NOTE: Elapsed Time: 0.00154900550842285 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:51:42.123625
-NOTE: Elapsed Time: 0.586431980133057 secs
+NOTE: Log Print Time:  2024-02-08 20:27:44.896067
+NOTE: Elapsed Time: 0.277934789657593 secs
 
 Testing instance brock400-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:42.126752
-NOTE: Elapsed Time: 0.00312685966491699 secs
+NOTE: Log Print Time:  2024-02-08 20:27:44.897494
+NOTE: Elapsed Time: 0.00142717361450195 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:51:42.430586
-NOTE: Elapsed Time: 0.303834199905396 secs
+NOTE: Log Print Time:  2024-02-08 20:27:45.161177
+NOTE: Elapsed Time: 0.263682842254639 secs
 
 Testing instance brock800-2 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:42.436005
-NOTE: Elapsed Time: 0.00541901588439941 secs
+NOTE: Log Print Time:  2024-02-08 20:27:45.162887
+NOTE: Elapsed Time: 0.00171017646789551 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:51:43.775421
-NOTE: Elapsed Time: 1.33941578865051 secs
+NOTE: Log Print Time:  2024-02-08 20:27:45.860098
+NOTE: Elapsed Time: 0.697210788726807 secs
 
 Testing instance brock800-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:43.779101
-NOTE: Elapsed Time: 0.00367999076843262 secs
+NOTE: Log Print Time:  2024-02-08 20:27:45.861659
+NOTE: Elapsed Time: 0.00156116485595703 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:51:44.84648
-NOTE: Elapsed Time: 1.06737899780273 secs
+NOTE: Log Print Time:  2024-02-08 20:27:46.509064
+NOTE: Elapsed Time: 0.647404909133911 secs
 
 Testing instance C1000-9 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:44.850585
-NOTE: Elapsed Time: 0.0041050910949707 secs
+NOTE: Log Print Time:  2024-02-08 20:27:46.510432
+NOTE: Elapsed Time: 0.00136804580688477 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:51:46.773065
-NOTE: Elapsed Time: 1.92248010635376 secs
+NOTE: Log Print Time:  2024-02-08 20:27:47.851534
+NOTE: Elapsed Time: 1.34110188484192 secs
 
 Testing instance C125-9 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:46.776165
-NOTE: Elapsed Time: 0.00309991836547852 secs
+NOTE: Log Print Time:  2024-02-08 20:27:47.853247
+NOTE: Elapsed Time: 0.00171303749084473 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:51:46.836121
-NOTE: Elapsed Time: 0.0599560737609863 secs
+NOTE: Log Print Time:  2024-02-08 20:27:47.900464
+NOTE: Elapsed Time: 0.0472171306610107 secs
 
 Testing instance C2000-5 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:46.83985
-NOTE: Elapsed Time: 0.00372886657714844 secs
+NOTE: Log Print Time:  2024-02-08 20:27:47.901853
+NOTE: Elapsed Time: 0.0013890266418457 secs
 
 Found solution length: 7
 
-NOTE: Log Print Time:  2024-02-08 08:51:50.910397
-NOTE: Elapsed Time: 4.07054710388184 secs
+NOTE: Log Print Time:  2024-02-08 20:27:50.924321
+NOTE: Elapsed Time: 3.02246785163879 secs
 
 Testing instance C2000-9 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:51:50.913264
-NOTE: Elapsed Time: 0.00286698341369629 secs
+NOTE: Log Print Time:  2024-02-08 20:27:50.925984
+NOTE: Elapsed Time: 0.0016629695892334 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:53:46.419261
-NOTE: Elapsed Time: 1.925099949042 mins
+NOTE: Log Print Time:  2024-02-08 20:27:56.1192
+NOTE: Elapsed Time: 5.19321608543396 secs
 
 Testing instance C250-9 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:53:46.451215
-NOTE: Elapsed Time: 0.0319540500640869 secs
+NOTE: Log Print Time:  2024-02-08 20:27:56.120689
+NOTE: Elapsed Time: 0.00148892402648926 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:53:47.024611
-NOTE: Elapsed Time: 0.573395967483521 secs
+NOTE: Log Print Time:  2024-02-08 20:27:56.299847
+NOTE: Elapsed Time: 0.179157972335815 secs
 
 Testing instance C4000-5 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:53:47.027889
-NOTE: Elapsed Time: 0.00327801704406738 secs
+NOTE: Log Print Time:  2024-02-08 20:27:56.300846
+NOTE: Elapsed Time: 0.000999212265014648 secs
 
 Found solution length: 8
 
-NOTE: Log Print Time:  2024-02-08 08:54:03.908394
-NOTE: Elapsed Time: 16.8805050849915 secs
+NOTE: Log Print Time:  2024-02-08 20:28:08.623785
+NOTE: Elapsed Time: 12.3229389190674 secs
 
 Testing instance C500-9 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:03.912602
-NOTE: Elapsed Time: 0.00420784950256348 secs
+NOTE: Log Print Time:  2024-02-08 20:28:08.625515
+NOTE: Elapsed Time: 0.00172996520996094 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:04.450556
-NOTE: Elapsed Time: 0.537954092025757 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.22836
+NOTE: Elapsed Time: 0.602844953536987 secs
 
 Testing instance c-fat200-1 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:04.454182
-NOTE: Elapsed Time: 0.00362586975097656 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.229377
+NOTE: Elapsed Time: 0.00101709365844727 secs
 
 Found solution length: 15
 
-NOTE: Log Print Time:  2024-02-08 08:54:04.543305
-NOTE: Elapsed Time: 0.089123010635376 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.26506
+NOTE: Elapsed Time: 0.0356829166412354 secs
 
 Testing instance c-fat200-2 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:04.548933
-NOTE: Elapsed Time: 0.00562810897827148 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.266277
+NOTE: Elapsed Time: 0.00121712684631348 secs
 
-Found solution length: 7
+Found solution length: 6
 
-NOTE: Log Print Time:  2024-02-08 08:54:04.709257
-NOTE: Elapsed Time: 0.160323858261108 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.309282
+NOTE: Elapsed Time: 0.0430049896240234 secs
 
 Testing instance c-fat200-5 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:04.714277
-NOTE: Elapsed Time: 0.0050201416015625 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.310955
+NOTE: Elapsed Time: 0.00167298316955566 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:54:04.810938
-NOTE: Elapsed Time: 0.096660852432251 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.511575
+NOTE: Elapsed Time: 0.20061993598938 secs
 
 Testing instance c-fat500-1 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:04.815163
-NOTE: Elapsed Time: 0.00422501564025879 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.513266
+NOTE: Elapsed Time: 0.00169110298156738 secs
 
-Found solution length: 30
+Found solution length: 32
 
-NOTE: Log Print Time:  2024-02-08 08:54:05.055199
-NOTE: Elapsed Time: 0.240036010742188 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.577034
+NOTE: Elapsed Time: 0.0637679100036621 secs
 
 Testing instance c-fat500-2 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:05.064355
-NOTE: Elapsed Time: 0.0091559886932373 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.578386
+NOTE: Elapsed Time: 0.00135207176208496 secs
 
 Found solution length: 16
 
-NOTE: Log Print Time:  2024-02-08 08:54:05.203447
-NOTE: Elapsed Time: 0.139092206954956 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.706987
+NOTE: Elapsed Time: 0.128600835800171 secs
 
 Testing instance c-fat500-5 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:05.206714
-NOTE: Elapsed Time: 0.00326681137084961 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.708251
+NOTE: Elapsed Time: 0.00126409530639648 secs
 
 Found solution length: 6
 
-NOTE: Log Print Time:  2024-02-08 08:54:05.5012
-NOTE: Elapsed Time: 0.294486045837402 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.806415
+NOTE: Elapsed Time: 0.0981640815734863 secs
 
 Testing instance DSJC1000-5 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:05.505999
-NOTE: Elapsed Time: 0.00479912757873535 secs
+NOTE: Log Print Time:  2024-02-08 20:28:09.807469
+NOTE: Elapsed Time: 0.00105381011962891 secs
 
 Found solution length: 6
 
-NOTE: Log Print Time:  2024-02-08 08:54:06.586487
-NOTE: Elapsed Time: 1.08048796653748 secs
+NOTE: Log Print Time:  2024-02-08 20:28:10.577324
+NOTE: Elapsed Time: 0.76985502243042 secs
 
 Testing instance DSJC500-5 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:06.590285
-NOTE: Elapsed Time: 0.00379800796508789 secs
+NOTE: Log Print Time:  2024-02-08 20:28:10.578559
+NOTE: Elapsed Time: 0.00123500823974609 secs
 
-Found solution length: 5
+Found solution length: 6
 
-NOTE: Log Print Time:  2024-02-08 08:54:06.905983
-NOTE: Elapsed Time: 0.315697908401489 secs
+NOTE: Log Print Time:  2024-02-08 20:28:10.827207
+NOTE: Elapsed Time: 0.248648166656494 secs
 
 Testing instance gen200-p0-9-44 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:06.91166
-NOTE: Elapsed Time: 0.0056769847869873 secs
+NOTE: Log Print Time:  2024-02-08 20:28:10.828259
+NOTE: Elapsed Time: 0.00105190277099609 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:07.006541
-NOTE: Elapsed Time: 0.0948810577392578 secs
+NOTE: Log Print Time:  2024-02-08 20:28:10.901921
+NOTE: Elapsed Time: 0.0736620426177979 secs
 
 Testing instance gen200-p0-9-55 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:07.011928
-NOTE: Elapsed Time: 0.0053870677947998 secs
+NOTE: Log Print Time:  2024-02-08 20:28:10.9031
+NOTE: Elapsed Time: 0.00117897987365723 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:07.112478
-NOTE: Elapsed Time: 0.100549936294556 secs
+NOTE: Log Print Time:  2024-02-08 20:28:11.033783
+NOTE: Elapsed Time: 0.130682945251465 secs
 
 Testing instance gen400-p0-9-55 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:07.115749
-NOTE: Elapsed Time: 0.00327086448669434 secs
+NOTE: Log Print Time:  2024-02-08 20:28:11.034774
+NOTE: Elapsed Time: 0.000991106033325195 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:09.770806
-NOTE: Elapsed Time: 2.65505719184875 secs
+NOTE: Log Print Time:  2024-02-08 20:28:11.305493
+NOTE: Elapsed Time: 0.270719051361084 secs
 
 Testing instance gen400-p0-9-65 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:09.776756
-NOTE: Elapsed Time: 0.00594997406005859 secs
+NOTE: Log Print Time:  2024-02-08 20:28:11.30655
+NOTE: Elapsed Time: 0.00105690956115723 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:10.134884
-NOTE: Elapsed Time: 0.358128070831299 secs
+NOTE: Log Print Time:  2024-02-08 20:28:11.572973
+NOTE: Elapsed Time: 0.266422986984253 secs
 
 Testing instance gen400-p0-9-75 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:10.137484
-NOTE: Elapsed Time: 0.00259995460510254 secs
+NOTE: Log Print Time:  2024-02-08 20:28:11.574448
+NOTE: Elapsed Time: 0.00147509574890137 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:10.563567
-NOTE: Elapsed Time: 0.426082849502563 secs
+NOTE: Log Print Time:  2024-02-08 20:28:11.849494
+NOTE: Elapsed Time: 0.275045871734619 secs
 
 Testing instance hamming10-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:10.567608
-NOTE: Elapsed Time: 0.00404119491577148 secs
+NOTE: Log Print Time:  2024-02-08 20:28:11.850861
+NOTE: Elapsed Time: 0.00136709213256836 secs
 
 Found solution length: 8
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.194387
-NOTE: Elapsed Time: 1.62677884101868 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.126785
+NOTE: Elapsed Time: 1.27592396736145 secs
 
 Testing instance hamming6-2 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.199621
-NOTE: Elapsed Time: 0.0052340030670166 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.128028
+NOTE: Elapsed Time: 0.00124287605285645 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.243694
-NOTE: Elapsed Time: 0.0440731048583984 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.163208
+NOTE: Elapsed Time: 0.0351800918579102 secs
 
 Testing instance hamming6-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.247238
-NOTE: Elapsed Time: 0.00354385375976562 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.16667
+NOTE: Elapsed Time: 0.00346207618713379 secs
 
 Found solution length: 8
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.288272
-NOTE: Elapsed Time: 0.0410339832305908 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.257424
+NOTE: Elapsed Time: 0.0907540321350098 secs
 
 Testing instance hamming8-2 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.293255
-NOTE: Elapsed Time: 0.00498318672180176 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.259145
+NOTE: Elapsed Time: 0.00172090530395508 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.577126
-NOTE: Elapsed Time: 0.283870935440063 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.37482
+NOTE: Elapsed Time: 0.11567497253418 secs
 
 Testing instance hamming8-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.580183
-NOTE: Elapsed Time: 0.00305700302124023 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.375872
+NOTE: Elapsed Time: 0.00105190277099609 secs
 
 Found solution length: 8
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.683772
-NOTE: Elapsed Time: 0.103589057922363 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.510789
+NOTE: Elapsed Time: 0.134917020797729 secs
 
 Testing instance johnson16-2-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.687202
-NOTE: Elapsed Time: 0.00342988967895508 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.512135
+NOTE: Elapsed Time: 0.00134611129760742 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.746617
-NOTE: Elapsed Time: 0.0594151020050049 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.552941
+NOTE: Elapsed Time: 0.0408060550689697 secs
 
 Testing instance johnson32-2-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:12.750439
-NOTE: Elapsed Time: 0.00382184982299805 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.55473
+NOTE: Elapsed Time: 0.00178885459899902 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:54:13.230686
-NOTE: Elapsed Time: 0.480247020721436 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.918809
+NOTE: Elapsed Time: 0.364078998565674 secs
 
 Testing instance johnson8-2-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:13.234091
-NOTE: Elapsed Time: 0.00340509414672852 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.919855
+NOTE: Elapsed Time: 0.00104618072509766 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:54:13.269402
-NOTE: Elapsed Time: 0.0353109836578369 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.942797
+NOTE: Elapsed Time: 0.0229418277740479 secs
 
 Testing instance johnson8-4-4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:13.274073
-NOTE: Elapsed Time: 0.00467085838317871 secs
+NOTE: Log Print Time:  2024-02-08 20:28:13.944065
+NOTE: Elapsed Time: 0.00126814842224121 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:54:13.329448
-NOTE: Elapsed Time: 0.0553750991821289 secs
+NOTE: Log Print Time:  2024-02-08 20:28:14.109712
+NOTE: Elapsed Time: 0.16564679145813 secs
 
 Testing instance keller4 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:13.33341
-NOTE: Elapsed Time: 0.00396203994750977 secs
+NOTE: Log Print Time:  2024-02-08 20:28:14.111298
+NOTE: Elapsed Time: 0.0015861988067627 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:54:13.477561
-NOTE: Elapsed Time: 0.144150972366333 secs
+NOTE: Log Print Time:  2024-02-08 20:28:14.172122
+NOTE: Elapsed Time: 0.060823917388916 secs
 
 Testing instance keller5 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:13.482026
-NOTE: Elapsed Time: 0.00446510314941406 secs
+NOTE: Log Print Time:  2024-02-08 20:28:14.17384
+NOTE: Elapsed Time: 0.00171804428100586 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:54:14.534327
-NOTE: Elapsed Time: 1.05230093002319 secs
+NOTE: Log Print Time:  2024-02-08 20:28:14.871278
+NOTE: Elapsed Time: 0.69743800163269 secs
 
 Testing instance keller6 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:14.538085
-NOTE: Elapsed Time: 0.00375795364379883 secs
+NOTE: Log Print Time:  2024-02-08 20:28:14.872307
+NOTE: Elapsed Time: 0.00102901458740234 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:54:34.798153
-NOTE: Elapsed Time: 20.2600679397583 secs
+NOTE: Log Print Time:  2024-02-08 20:28:29.111361
+NOTE: Elapsed Time: 14.2390539646149 secs
 
 Testing instance MANN-a27 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:34.804289
-NOTE: Elapsed Time: 0.00613617897033691 secs
+NOTE: Log Print Time:  2024-02-08 20:28:29.112754
+NOTE: Elapsed Time: 0.00139307975769043 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:35.163803
-NOTE: Elapsed Time: 0.359513998031616 secs
+NOTE: Log Print Time:  2024-02-08 20:28:29.438158
+NOTE: Elapsed Time: 0.325403928756714 secs
 
 Testing instance MANN-a45 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:35.1681
-NOTE: Elapsed Time: 0.00429701805114746 secs
+NOTE: Log Print Time:  2024-02-08 20:28:29.439731
+NOTE: Elapsed Time: 0.00157284736633301 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:54:37.438839
-NOTE: Elapsed Time: 2.27073884010315 secs
+NOTE: Log Print Time:  2024-02-08 20:28:31.133548
+NOTE: Elapsed Time: 1.69381713867188 secs
 
 Testing instance MANN-a81 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:54:37.441724
-NOTE: Elapsed Time: 0.00288510322570801 secs
+NOTE: Log Print Time:  2024-02-08 20:28:31.13479
+NOTE: Elapsed Time: 0.00124192237854004 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:56:22.74476
-NOTE: Elapsed Time: 1.75505059957504 mins
+NOTE: Log Print Time:  2024-02-08 20:28:47.385654
+NOTE: Elapsed Time: 16.2508640289307 secs
 
 Testing instance MANN-a9 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:56:24.010684
-NOTE: Elapsed Time: 1.26592397689819 secs
+NOTE: Log Print Time:  2024-02-08 20:28:47.387138
+NOTE: Elapsed Time: 0.00148391723632812 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:56:24.198219
-NOTE: Elapsed Time: 0.187535047531128 secs
+NOTE: Log Print Time:  2024-02-08 20:28:47.434197
+NOTE: Elapsed Time: 0.0470590591430664 secs
 
 Testing instance p-hat1500-1 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:56:24.200711
-NOTE: Elapsed Time: 0.00249195098876953 secs
+NOTE: Log Print Time:  2024-02-08 20:28:47.435702
+NOTE: Elapsed Time: 0.00150513648986816 secs
 
 Found solution length: 13
 
-NOTE: Log Print Time:  2024-02-08 08:56:25.771837
-NOTE: Elapsed Time: 1.57112598419189 secs
+NOTE: Log Print Time:  2024-02-08 20:28:48.376113
+NOTE: Elapsed Time: 0.940410852432251 secs
 
 Testing instance p-hat1500-2 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:56:25.774887
-NOTE: Elapsed Time: 0.00305008888244629 secs
-
-Found solution length: 10
-
-NOTE: Log Print Time:  2024-02-08 08:56:28.243125
-NOTE: Elapsed Time: 2.46823787689209 secs
-
-Testing instance p-hat1500-3 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:28.245772
-NOTE: Elapsed Time: 0.00264692306518555 secs
-
-Found solution length: 4
-
-NOTE: Log Print Time:  2024-02-08 08:56:31.765052
-NOTE: Elapsed Time: 3.51928019523621 secs
-
-Testing instance p-hat300-1 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:31.768927
-NOTE: Elapsed Time: 0.0038750171661377 secs
-
-Found solution length: 8
-
-NOTE: Log Print Time:  2024-02-08 08:56:32.573786
-NOTE: Elapsed Time: 0.804858922958374 secs
-
-Testing instance p-hat300-2 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:32.577413
-NOTE: Elapsed Time: 0.00362706184387207 secs
-
-Found solution length: 5
-
-NOTE: Log Print Time:  2024-02-08 08:56:33.337109
-NOTE: Elapsed Time: 0.759696006774902 secs
-
-Testing instance p-hat300-3 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:33.340334
-NOTE: Elapsed Time: 0.00322484970092773 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:33.871761
-NOTE: Elapsed Time: 0.531427145004272 secs
-
-Testing instance p-hat700-1 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:33.874787
-NOTE: Elapsed Time: 0.00302600860595703 secs
-
-Found solution length: 11
-
-NOTE: Log Print Time:  2024-02-08 08:56:34.61677
-NOTE: Elapsed Time: 0.741982936859131 secs
-
-Testing instance p-hat700-2 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:34.622689
-NOTE: Elapsed Time: 0.00591897964477539 secs
-
-Found solution length: 5
-
-NOTE: Log Print Time:  2024-02-08 08:56:35.414497
-NOTE: Elapsed Time: 0.791807889938354 secs
-
-Testing instance p-hat700-3 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:35.416683
-NOTE: Elapsed Time: 0.00218605995178223 secs
-
-Found solution length: 4
-
-NOTE: Log Print Time:  2024-02-08 08:56:36.546283
-NOTE: Elapsed Time: 1.12960004806519 secs
-
-Testing instance san1000 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:36.54944
-NOTE: Elapsed Time: 0.00315690040588379 secs
-
-Found solution length: 15
-
-NOTE: Log Print Time:  2024-02-08 08:56:37.828169
-NOTE: Elapsed Time: 1.27872920036316 secs
-
-Testing instance san200-0-7-1 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:37.832151
-NOTE: Elapsed Time: 0.0039818286895752 secs
-
-Found solution length: 2
-
-NOTE: Log Print Time:  2024-02-08 08:56:38.031024
-NOTE: Elapsed Time: 0.198873043060303 secs
-
-Testing instance san200-0-7-2 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:38.036233
-NOTE: Elapsed Time: 0.00520896911621094 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:38.581232
-NOTE: Elapsed Time: 0.544999122619629 secs
-
-Testing instance san200-0-9-1 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:38.58453
-NOTE: Elapsed Time: 0.00329804420471191 secs
-
-Found solution length: 2
-
-NOTE: Log Print Time:  2024-02-08 08:56:39.597626
-NOTE: Elapsed Time: 1.01309585571289 secs
-
-Testing instance san200-0-9-2 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:39.600495
-NOTE: Elapsed Time: 0.0028691291809082 secs
-
-Found solution length: 2
-
-NOTE: Log Print Time:  2024-02-08 08:56:39.710851
-NOTE: Elapsed Time: 0.110355854034424 secs
-
-Testing instance san200-0-9-3 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:39.713993
-NOTE: Elapsed Time: 0.00314211845397949 secs
-
-Found solution length: 2
-
-NOTE: Log Print Time:  2024-02-08 08:56:40.230531
-NOTE: Elapsed Time: 0.51653790473938 secs
-
-Testing instance san400-0-5-1 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:40.233608
-NOTE: Elapsed Time: 0.00307703018188477 secs
+NOTE: Log Print Time:  2024-02-08 20:28:48.37741
+NOTE: Elapsed Time: 0.0012969970703125 secs
 
 Found solution length: 9
 
-NOTE: Log Print Time:  2024-02-08 08:56:41.196078
-NOTE: Elapsed Time: 0.962470054626465 secs
+NOTE: Log Print Time:  2024-02-08 20:28:50.116704
+NOTE: Elapsed Time: 1.73929405212402 secs
 
-Testing instance san400-0-7-1 from dimacs
+Testing instance p-hat1500-3 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:56:41.198721
-NOTE: Elapsed Time: 0.00264286994934082 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:41.870505
-NOTE: Elapsed Time: 0.671784162521362 secs
-
-Testing instance san400-0-7-2 from dimacs
-
-NOTE: Log Print Time:  2024-02-08 08:56:41.873923
-NOTE: Elapsed Time: 0.00341796875 secs
+NOTE: Log Print Time:  2024-02-08 20:28:50.117966
+NOTE: Elapsed Time: 0.00126194953918457 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:56:42.29355
-NOTE: Elapsed Time: 0.419626951217651 secs
+NOTE: Log Print Time:  2024-02-08 20:28:52.660021
+NOTE: Elapsed Time: 2.54205513000488 secs
 
-Testing instance san400-0-7-3 from dimacs
+Testing instance p-hat300-1 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:56:42.296261
-NOTE: Elapsed Time: 0.00271105766296387 secs
+NOTE: Log Print Time:  2024-02-08 20:28:52.661163
+NOTE: Elapsed Time: 0.00114202499389648 secs
+
+Found solution length: 8
+
+NOTE: Log Print Time:  2024-02-08 20:28:52.724668
+NOTE: Elapsed Time: 0.0635049343109131 secs
+
+Testing instance p-hat300-2 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:52.725692
+NOTE: Elapsed Time: 0.00102400779724121 secs
+
+Found solution length: 6
+
+NOTE: Log Print Time:  2024-02-08 20:28:52.884036
+NOTE: Elapsed Time: 0.158344030380249 secs
+
+Testing instance p-hat300-3 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:52.885094
+NOTE: Elapsed Time: 0.00105786323547363 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:28:53.018466
+NOTE: Elapsed Time: 0.133372068405151 secs
+
+Testing instance p-hat700-1 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:53.019751
+NOTE: Elapsed Time: 0.00128507614135742 secs
+
+Found solution length: 13
+
+NOTE: Log Print Time:  2024-02-08 20:28:53.384853
+NOTE: Elapsed Time: 0.36510181427002 secs
+
+Testing instance p-hat700-2 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:53.385875
+NOTE: Elapsed Time: 0.0010221004486084 secs
+
+Found solution length: 5
+
+NOTE: Log Print Time:  2024-02-08 20:28:53.799702
+NOTE: Elapsed Time: 0.413826942443848 secs
+
+Testing instance p-hat700-3 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:53.80106
+NOTE: Elapsed Time: 0.0013580322265625 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:56:43.206117
-NOTE: Elapsed Time: 0.909855842590332 secs
+NOTE: Log Print Time:  2024-02-08 20:28:54.391592
+NOTE: Elapsed Time: 0.590532064437866 secs
 
-Testing instance frb30-15-1 from bhoslib
+Testing instance san1000 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:56:43.208444
-NOTE: Elapsed Time: 0.00232720375061035 secs
+NOTE: Log Print Time:  2024-02-08 20:28:54.392887
+NOTE: Elapsed Time: 0.00129508972167969 secs
 
-Found solution length: 3
+Found solution length: 14
 
-NOTE: Log Print Time:  2024-02-08 08:56:43.840032
-NOTE: Elapsed Time: 0.631587982177734 secs
+NOTE: Log Print Time:  2024-02-08 20:28:55.557167
+NOTE: Elapsed Time: 1.16427993774414 secs
 
-Testing instance frb30-15-2 from bhoslib
+Testing instance san200-0-7-1 from dimacs
 
-NOTE: Log Print Time:  2024-02-08 08:56:43.843224
-NOTE: Elapsed Time: 0.00319194793701172 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:44.522333
-NOTE: Elapsed Time: 0.679108858108521 secs
-
-Testing instance frb30-15-3 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:44.526415
-NOTE: Elapsed Time: 0.00408220291137695 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:45.151715
-NOTE: Elapsed Time: 0.62529993057251 secs
-
-Testing instance frb30-15-4 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:45.156279
-NOTE: Elapsed Time: 0.00456404685974121 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:46.143607
-NOTE: Elapsed Time: 0.987327814102173 secs
-
-Testing instance frb30-15-5 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:46.146801
-NOTE: Elapsed Time: 0.00319409370422363 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:46.811425
-NOTE: Elapsed Time: 0.664623975753784 secs
-
-Testing instance frb35-17-1 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:46.814448
-NOTE: Elapsed Time: 0.00302314758300781 secs
-
-Found solution length: 4
-
-NOTE: Log Print Time:  2024-02-08 08:56:48.109085
-NOTE: Elapsed Time: 1.29463696479797 secs
-
-Testing instance frb35-17-2 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:48.112609
-NOTE: Elapsed Time: 0.00352382659912109 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:48.991148
-NOTE: Elapsed Time: 0.878539085388184 secs
-
-Testing instance frb35-17-3 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:48.993746
-NOTE: Elapsed Time: 0.00259804725646973 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:49.840489
-NOTE: Elapsed Time: 0.846742868423462 secs
-
-Testing instance frb35-17-4 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:49.842955
-NOTE: Elapsed Time: 0.00246620178222656 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:50.785613
-NOTE: Elapsed Time: 0.942657947540283 secs
-
-Testing instance frb35-17-5 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:50.790579
-NOTE: Elapsed Time: 0.00496602058410645 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:51.65458
-NOTE: Elapsed Time: 0.864001035690308 secs
-
-Testing instance frb40-19-1 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:51.657568
-NOTE: Elapsed Time: 0.00298786163330078 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:52.92658
-NOTE: Elapsed Time: 1.26901197433472 secs
-
-Testing instance frb40-19-2 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:52.930663
-NOTE: Elapsed Time: 0.00408315658569336 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:54.260299
-NOTE: Elapsed Time: 1.32963585853577 secs
-
-Testing instance frb40-19-3 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:54.265788
-NOTE: Elapsed Time: 0.00548911094665527 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:55.553265
-NOTE: Elapsed Time: 1.28747701644897 secs
-
-Testing instance frb40-19-4 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:55.556267
-NOTE: Elapsed Time: 0.00300192832946777 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:56.774611
-NOTE: Elapsed Time: 1.21834397315979 secs
-
-Testing instance frb40-19-5 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:56.777661
-NOTE: Elapsed Time: 0.00305008888244629 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:57.996436
-NOTE: Elapsed Time: 1.21877503395081 secs
-
-Testing instance frb45-21-1 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:58.00035
-NOTE: Elapsed Time: 0.00391387939453125 secs
-
-Found solution length: 3
-
-NOTE: Log Print Time:  2024-02-08 08:56:59.694926
-NOTE: Elapsed Time: 1.69457602500916 secs
-
-Testing instance frb45-21-2 from bhoslib
-
-NOTE: Log Print Time:  2024-02-08 08:56:59.699184
-NOTE: Elapsed Time: 0.0042579174041748 secs
+NOTE: Log Print Time:  2024-02-08 20:28:55.55841
+NOTE: Elapsed Time: 0.00124287605285645 secs
 
 Found solution length: 2
 
-NOTE: Log Print Time:  2024-02-08 08:57:01.528495
-NOTE: Elapsed Time: 1.82931113243103 secs
+NOTE: Log Print Time:  2024-02-08 20:28:55.627297
+NOTE: Elapsed Time: 0.0688869953155518 secs
+
+Testing instance san200-0-7-2 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:55.628581
+NOTE: Elapsed Time: 0.00128412246704102 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:28:55.697855
+NOTE: Elapsed Time: 0.0692739486694336 secs
+
+Testing instance san200-0-9-1 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:55.698878
+NOTE: Elapsed Time: 0.0010230541229248 secs
+
+Found solution length: 2
+
+NOTE: Log Print Time:  2024-02-08 20:28:55.82401
+NOTE: Elapsed Time: 0.125131845474243 secs
+
+Testing instance san200-0-9-2 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:55.825359
+NOTE: Elapsed Time: 0.00134921073913574 secs
+
+Found solution length: 2
+
+NOTE: Log Print Time:  2024-02-08 20:28:55.906096
+NOTE: Elapsed Time: 0.0807368755340576 secs
+
+Testing instance san200-0-9-3 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:55.907365
+NOTE: Elapsed Time: 0.00126910209655762 secs
+
+Found solution length: 2
+
+NOTE: Log Print Time:  2024-02-08 20:28:55.990517
+NOTE: Elapsed Time: 0.0831518173217773 secs
+
+Testing instance san400-0-5-1 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:55.991711
+NOTE: Elapsed Time: 0.00119400024414062 secs
+
+Found solution length: 9
+
+NOTE: Log Print Time:  2024-02-08 20:28:56.181585
+NOTE: Elapsed Time: 0.189874172210693 secs
+
+Testing instance san400-0-7-1 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:56.182661
+NOTE: Elapsed Time: 0.00107598304748535 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:28:56.413961
+NOTE: Elapsed Time: 0.231299877166748 secs
+
+Testing instance san400-0-7-2 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:56.41494
+NOTE: Elapsed Time: 0.000979185104370117 secs
+
+Found solution length: 4
+
+NOTE: Log Print Time:  2024-02-08 20:28:56.647624
+NOTE: Elapsed Time: 0.232683897018433 secs
+
+Testing instance san400-0-7-3 from dimacs
+
+NOTE: Log Print Time:  2024-02-08 20:28:56.649069
+NOTE: Elapsed Time: 0.00144505500793457 secs
+
+Found solution length: 4
+
+NOTE: Log Print Time:  2024-02-08 20:28:56.913778
+NOTE: Elapsed Time: 0.264708995819092 secs
+
+Testing instance frb30-15-1 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:28:56.914804
+NOTE: Elapsed Time: 0.00102591514587402 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:28:57.221721
+NOTE: Elapsed Time: 0.306916952133179 secs
+
+Testing instance frb30-15-2 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:28:57.22283
+NOTE: Elapsed Time: 0.00110912322998047 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:28:57.524917
+NOTE: Elapsed Time: 0.30208683013916 secs
+
+Testing instance frb30-15-3 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:28:57.526423
+NOTE: Elapsed Time: 0.00150609016418457 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:28:57.838282
+NOTE: Elapsed Time: 0.311859130859375 secs
+
+Testing instance frb30-15-4 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:28:57.839517
+NOTE: Elapsed Time: 0.00123500823974609 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:28:58.145662
+NOTE: Elapsed Time: 0.306144952774048 secs
+
+Testing instance frb30-15-5 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:28:58.146916
+NOTE: Elapsed Time: 0.00125384330749512 secs
+
+Found solution length: 2
+
+NOTE: Log Print Time:  2024-02-08 20:28:58.456463
+NOTE: Elapsed Time: 0.309547185897827 secs
+
+Testing instance frb35-17-1 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:28:58.457734
+NOTE: Elapsed Time: 0.00127100944519043 secs
+
+Found solution length: 4
+
+NOTE: Log Print Time:  2024-02-08 20:28:58.958488
+NOTE: Elapsed Time: 0.500753879547119 secs
+
+Testing instance frb35-17-2 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:28:58.960048
+NOTE: Elapsed Time: 0.00155997276306152 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:28:59.459684
+NOTE: Elapsed Time: 0.499635934829712 secs
+
+Testing instance frb35-17-3 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:28:59.460864
+NOTE: Elapsed Time: 0.00118017196655273 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:28:59.948023
+NOTE: Elapsed Time: 0.487159013748169 secs
+
+Testing instance frb35-17-4 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:28:59.949276
+NOTE: Elapsed Time: 0.00125288963317871 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:29:00.464763
+NOTE: Elapsed Time: 0.5154869556427 secs
+
+Testing instance frb35-17-5 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:29:00.46576
+NOTE: Elapsed Time: 0.000997066497802734 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:29:00.977809
+NOTE: Elapsed Time: 0.512048959732056 secs
+
+Testing instance frb40-19-1 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:29:00.979347
+NOTE: Elapsed Time: 0.00153803825378418 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:29:03.187546
+NOTE: Elapsed Time: 2.20819902420044 secs
+
+Testing instance frb40-19-2 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:29:03.188645
+NOTE: Elapsed Time: 0.0010988712310791 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:29:04.040704
+NOTE: Elapsed Time: 0.852059125900269 secs
+
+Testing instance frb40-19-3 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:29:04.042045
+NOTE: Elapsed Time: 0.00134110450744629 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:29:04.801051
+NOTE: Elapsed Time: 0.759005784988403 secs
+
+Testing instance frb40-19-4 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:29:04.802028
+NOTE: Elapsed Time: 0.000977039337158203 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:29:05.670388
+NOTE: Elapsed Time: 0.868360042572021 secs
+
+Testing instance frb40-19-5 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:29:05.673298
+NOTE: Elapsed Time: 0.00290989875793457 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:29:06.636259
+NOTE: Elapsed Time: 0.962961196899414 secs
+
+Testing instance frb45-21-1 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:29:06.637584
+NOTE: Elapsed Time: 0.00132489204406738 secs
+
+Found solution length: 3
+
+NOTE: Log Print Time:  2024-02-08 20:29:07.861067
+NOTE: Elapsed Time: 1.22348308563232 secs
+
+Testing instance frb45-21-2 from bhoslib
+
+NOTE: Log Print Time:  2024-02-08 20:29:07.86272
+NOTE: Elapsed Time: 0.00165295600891113 secs
+
+Found solution length: 2
+
+NOTE: Log Print Time:  2024-02-08 20:29:09.142622
+NOTE: Elapsed Time: 1.27990198135376 secs
 
 Testing instance frb45-21-3 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:01.532822
-NOTE: Elapsed Time: 0.00432682037353516 secs
+NOTE: Log Print Time:  2024-02-08 20:29:09.143918
+NOTE: Elapsed Time: 0.00129604339599609 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:03.392528
-NOTE: Elapsed Time: 1.85970616340637 secs
+NOTE: Log Print Time:  2024-02-08 20:29:10.631173
+NOTE: Elapsed Time: 1.48725485801697 secs
 
 Testing instance frb45-21-4 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:03.395724
-NOTE: Elapsed Time: 0.00319600105285645 secs
+NOTE: Log Print Time:  2024-02-08 20:29:10.63246
+NOTE: Elapsed Time: 0.00128722190856934 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:05.110318
-NOTE: Elapsed Time: 1.7145938873291 secs
+NOTE: Log Print Time:  2024-02-08 20:29:12.037168
+NOTE: Elapsed Time: 1.40470790863037 secs
 
 Testing instance frb45-21-5 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:05.115403
-NOTE: Elapsed Time: 0.00508499145507812 secs
+NOTE: Log Print Time:  2024-02-08 20:29:12.038507
+NOTE: Elapsed Time: 0.00133895874023438 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:57:06.841999
-NOTE: Elapsed Time: 1.72659611701965 secs
+NOTE: Log Print Time:  2024-02-08 20:29:13.406724
+NOTE: Elapsed Time: 1.36821699142456 secs
 
 Testing instance frb50-23-1 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:06.845833
-NOTE: Elapsed Time: 0.00383400917053223 secs
+NOTE: Log Print Time:  2024-02-08 20:29:13.407765
+NOTE: Elapsed Time: 0.00104093551635742 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:09.500708
-NOTE: Elapsed Time: 2.65487504005432 secs
+NOTE: Log Print Time:  2024-02-08 20:29:15.218261
+NOTE: Elapsed Time: 1.81049609184265 secs
 
 Testing instance frb50-23-2 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:09.504622
-NOTE: Elapsed Time: 0.00391387939453125 secs
+NOTE: Log Print Time:  2024-02-08 20:29:15.220407
+NOTE: Elapsed Time: 0.00214600563049316 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:57:12.137111
-NOTE: Elapsed Time: 2.63248896598816 secs
+NOTE: Log Print Time:  2024-02-08 20:29:17.005867
+NOTE: Elapsed Time: 1.78545999526978 secs
 
 Testing instance frb50-23-3 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:12.141559
-NOTE: Elapsed Time: 0.00444793701171875 secs
+NOTE: Log Print Time:  2024-02-08 20:29:17.006919
+NOTE: Elapsed Time: 0.00105190277099609 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:14.599064
-NOTE: Elapsed Time: 2.45750522613525 secs
+NOTE: Log Print Time:  2024-02-08 20:29:18.753423
+NOTE: Elapsed Time: 1.74650406837463 secs
 
 Testing instance frb50-23-4 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:14.602122
-NOTE: Elapsed Time: 0.00305795669555664 secs
+NOTE: Log Print Time:  2024-02-08 20:29:18.754754
+NOTE: Elapsed Time: 0.00133109092712402 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:57:17.086668
-NOTE: Elapsed Time: 2.48454594612122 secs
+NOTE: Log Print Time:  2024-02-08 20:29:20.48479
+NOTE: Elapsed Time: 1.73003602027893 secs
 
 Testing instance frb50-23-5 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:17.090572
-NOTE: Elapsed Time: 0.00390410423278809 secs
+NOTE: Log Print Time:  2024-02-08 20:29:20.485806
+NOTE: Elapsed Time: 0.00101590156555176 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:19.777652
-NOTE: Elapsed Time: 2.68707990646362 secs
+NOTE: Log Print Time:  2024-02-08 20:29:22.332225
+NOTE: Elapsed Time: 1.84641909599304 secs
 
 Testing instance frb53-24-1 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:19.783136
-NOTE: Elapsed Time: 0.00548386573791504 secs
+NOTE: Log Print Time:  2024-02-08 20:29:22.333271
+NOTE: Elapsed Time: 0.00104594230651855 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:23.080039
-NOTE: Elapsed Time: 3.29690313339233 secs
+NOTE: Log Print Time:  2024-02-08 20:29:24.427318
+NOTE: Elapsed Time: 2.09404706954956 secs
 
 Testing instance frb53-24-2 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:23.084437
-NOTE: Elapsed Time: 0.00439786911010742 secs
+NOTE: Log Print Time:  2024-02-08 20:29:24.428886
+NOTE: Elapsed Time: 0.00156784057617188 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:26.28832
-NOTE: Elapsed Time: 3.20388317108154 secs
+NOTE: Log Print Time:  2024-02-08 20:29:26.608447
+NOTE: Elapsed Time: 2.17956113815308 secs
 
 Testing instance frb53-24-3 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:26.294802
-NOTE: Elapsed Time: 0.00648188591003418 secs
+NOTE: Log Print Time:  2024-02-08 20:29:26.609695
+NOTE: Elapsed Time: 0.00124788284301758 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:29.337406
-NOTE: Elapsed Time: 3.04260396957397 secs
+NOTE: Log Print Time:  2024-02-08 20:29:28.682795
+NOTE: Elapsed Time: 2.07310009002686 secs
 
 Testing instance frb53-24-4 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:29.345305
-NOTE: Elapsed Time: 0.00789904594421387 secs
+NOTE: Log Print Time:  2024-02-08 20:29:28.683854
+NOTE: Elapsed Time: 0.00105905532836914 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:32.373056
-NOTE: Elapsed Time: 3.02775096893311 secs
+NOTE: Log Print Time:  2024-02-08 20:29:30.786326
+NOTE: Elapsed Time: 2.10247182846069 secs
 
 Testing instance frb53-24-5 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:32.378372
-NOTE: Elapsed Time: 0.00531601905822754 secs
+NOTE: Log Print Time:  2024-02-08 20:29:30.787589
+NOTE: Elapsed Time: 0.00126314163208008 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:57:35.797767
-NOTE: Elapsed Time: 3.41939496994019 secs
+NOTE: Log Print Time:  2024-02-08 20:29:32.927419
+NOTE: Elapsed Time: 2.1398298740387 secs
 
 Testing instance frb59-26-1 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:57:35.802595
-NOTE: Elapsed Time: 0.00482797622680664 secs
+NOTE: Log Print Time:  2024-02-08 20:29:32.928818
+NOTE: Elapsed Time: 0.00139904022216797 secs
 
 Found solution length: 4
 
-NOTE: Log Print Time:  2024-02-08 08:58:54.907594
-NOTE: Elapsed Time: 1.31841665108999 mins
+NOTE: Log Print Time:  2024-02-08 20:29:36.32603
+NOTE: Elapsed Time: 3.39721202850342 secs
 
 Testing instance frb59-26-2 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:58:54.933816
-NOTE: Elapsed Time: 0.0262219905853271 secs
+NOTE: Log Print Time:  2024-02-08 20:29:36.328155
+NOTE: Elapsed Time: 0.00212502479553223 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:59:00.396415
-NOTE: Elapsed Time: 5.46259903907776 secs
+NOTE: Log Print Time:  2024-02-08 20:29:39.90672
+NOTE: Elapsed Time: 3.57856488227844 secs
 
 Testing instance frb59-26-3 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:59:00.401207
-NOTE: Elapsed Time: 0.0047919750213623 secs
+NOTE: Log Print Time:  2024-02-08 20:29:39.907957
+NOTE: Elapsed Time: 0.00123715400695801 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:59:04.846404
-NOTE: Elapsed Time: 4.44519710540771 secs
+NOTE: Log Print Time:  2024-02-08 20:29:43.422534
+NOTE: Elapsed Time: 3.51457691192627 secs
 
 Testing instance frb59-26-4 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:59:04.848874
-NOTE: Elapsed Time: 0.00247001647949219 secs
+NOTE: Log Print Time:  2024-02-08 20:29:43.423958
+NOTE: Elapsed Time: 0.00142407417297363 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:59:09.466548
-NOTE: Elapsed Time: 4.61767387390137 secs
+NOTE: Log Print Time:  2024-02-08 20:29:46.997522
+NOTE: Elapsed Time: 3.57356405258179 secs
 
 Testing instance frb59-26-5 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:59:09.470356
-NOTE: Elapsed Time: 0.00380802154541016 secs
+NOTE: Log Print Time:  2024-02-08 20:29:46.99867
+NOTE: Elapsed Time: 0.00114798545837402 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:59:14.589235
-NOTE: Elapsed Time: 5.11887907981873 secs
+NOTE: Log Print Time:  2024-02-08 20:29:50.078147
+NOTE: Elapsed Time: 3.07947683334351 secs
 
 Testing instance frb100-40 from bhoslib
 
-NOTE: Log Print Time:  2024-02-08 08:59:14.596375
-NOTE: Elapsed Time: 0.00713992118835449 secs
+NOTE: Log Print Time:  2024-02-08 20:29:50.079398
+NOTE: Elapsed Time: 0.0012509822845459 secs
 
 Found solution length: 3
 
-NOTE: Log Print Time:  2024-02-08 08:59:43.914543
-NOTE: Elapsed Time: 29.318167924881 secs
+NOTE: Log Print Time:  2024-02-08 20:30:12.136536
+NOTE: Elapsed Time: 22.057137966156 secs
 
+=========================================================================
+Log End Time: 2024-02-08 20:30:12.137432
+Log Elapsed Time: 0 00:02:27
+=========================================================================
