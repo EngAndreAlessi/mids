@@ -51,18 +51,26 @@ solutions <- NULL
 
 for(i in 1:nrow(experiment)){
     instance <- experiment[i, ]
-    logr::log_print(paste(i, " - Testing instance ", instance$name, " from ", instance$dataset, sep=""))
-    solution <- greedy(instance$name, instance$dataset)
+    logr::log_print(paste(i, " - Testing instance ", instance$instances, " from ", instance$datasets, sep=""))
+    solution <- greedy(instance$instances, instance$datasets)
     logr::log_print(paste("Found solution length: ", length(solution)))
     logr::log_print("Found solution:")
     logr::log_print(solution)
-    solutions <- c(solutions, solution)
+    solutions <- c(solutions, length(solution))
     solution <- NULL
 }
 
-final_experiment <- experiment |> mutate(solution_lengths = solutions)
+logr::log_print("Experiment DONE")
+
+logr::log_print("Writing results...")
+
+final_experiment <- tibble(experiment, solutions)
 
 write_csv(final_experiment, "data/results.csv")
+
+logr::log_print("Writing results... DONE")
+
+logr::log_close()
 
 
 
