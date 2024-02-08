@@ -17,8 +17,7 @@ greedy <- function(instance_name, instance_family, messages = FALSE){
     file_name <- paste(instance_name, ".txt", sep = "")
     file_path <- paste("data", instance_family, file_name, sep = "/")
     instance_df <- readr::read_delim(file_path, col_names = c("V1", "V2"), show_col_types = FALSE)
-    instance_graph <- igraph::graph_from_data_frame(instance_df)
-    instance_graph <- igraph::as.undirected(instance_graph)
+    instance_graph <- igraph::graph_from_data_frame(instance_df, directed = FALSE)
     
     if(messages) {
         print("Data loaded")
@@ -57,19 +56,22 @@ greedy <- function(instance_name, instance_family, messages = FALSE){
         if(messages){
             print(paste("Selected node: ", selected_node, sep=""))
         }
+        
         # Insert node into solution
         solution <- c(solution, selected_node)
         if(messages){
             print("Partial solution: ")
             print(solution)
         }
-        # Remove neighbors
-        instance_graph <- igraph::delete_vertices(instance_graph, igraph::neighbors(instance_graph, selected_node))
+        # Remove closed neighborhood
+        neighborhood_ <- igraph::neighbors(instance_graph, selected_node)
+        instance_graph <- igraph::delete_vertices(instance_graph, neighborhood_)
         # Remove selected node
         instance_graph <- igraph::delete_vertices(instance_graph, selected_node)
         # Update count and iter
         count <- igraph::ecount(instance_graph)
         iter <- iter + 1
+        
     }
     
     # Return the solution
