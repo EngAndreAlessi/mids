@@ -70,7 +70,7 @@ logr::log_print("Writing results...")
 
 final_experiment <- tibble(experiment, solutions)
 
-write_csv(final_experiment, "data/results.csv")
+write_csv(final_experiment, "data/results/results-raw.csv")
 
 logr::log_print("Writing results... DONE")
 
