@@ -9,28 +9,29 @@ Operating System: Windows 10 x64 build 22631
 Base Packages: stats graphics grDevices utils datasets methods base Other
 Packages: logr_1.3.5 lubridate_1.9.3 forcats_1.0.0 stringr_1.5.1 dplyr_1.1.4
 purrr_1.0.2 readr_2.1.5 tidyr_1.3.0 tibble_3.2.1 ggplot2_3.4.4 tidyverse_2.0.0
-Log Start Time: 2024-02-08 22:29:50.434237
+igraph_1.6.0
+Log Start Time: 2024-02-09 01:20:49.995916
 =========================================================================
 
 Reading cleaned results data...
 
-NOTE: Log Print Time:  2024-02-08 22:29:50.450964
-NOTE: Elapsed Time: 0.000896930694580078 secs
+NOTE: Log Print Time:  2024-02-09 01:20:49.99887
+NOTE: Elapsed Time: 0.000948905944824219 secs
 
 Reading cleaned results data... DONE
 
-NOTE: Log Print Time:  2024-02-08 22:29:50.594533
-NOTE: Elapsed Time: 0.143568992614746 secs
+NOTE: Log Print Time:  2024-02-09 01:20:50.214378
+NOTE: Elapsed Time: 0.215508222579956 secs
 
 Starting wilcoxon test...
 
-NOTE: Log Print Time:  2024-02-08 22:29:50.596473
-NOTE: Elapsed Time: 0.00194001197814941 secs
+NOTE: Log Print Time:  2024-02-09 01:20:50.215377
+NOTE: Elapsed Time: 0.000998973846435547 secs
 
 Wilcoxon test... DONE
 
-NOTE: Log Print Time:  2024-02-08 22:29:50.600207
-NOTE: Elapsed Time: 0.00373411178588867 secs
+NOTE: Log Print Time:  2024-02-09 01:20:50.221394
+NOTE: Elapsed Time: 0.00601696968078613 secs
 
 
 	Wilcoxon signed rank test with continuity correction
@@ -40,10 +41,10 @@ V = 293, p-value = 2.079e-13
 alternative hypothesis: true location shift is less than 0
 
 
-NOTE: Log Print Time:  2024-02-08 22:29:50.681903
-NOTE: Elapsed Time: 0.0816957950592041 secs
+NOTE: Log Print Time:  2024-02-09 01:20:50.248603
+NOTE: Elapsed Time: 0.0272090435028076 secs
 
 =========================================================================
-Log End Time: 2024-02-08 22:29:50.68247
+Log End Time: 2024-02-09 01:20:50.249054
 Log Elapsed Time: 0 00:00:00
 =========================================================================
