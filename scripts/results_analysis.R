@@ -22,7 +22,7 @@ log_print("Mutating data... DONE")
 
 log_print("Creating plots...")
 
-ggplot(data, aes(x = Method, y = percent_excess)) +
+ggplot(data, aes(x = Method, y = percent_excess, color = Method)) +
     geom_boxplot()
 
 ggplot(data = data, 
