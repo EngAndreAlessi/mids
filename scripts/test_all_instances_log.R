@@ -1,6 +1,7 @@
 library(igraph)
 library(readr)
 library(logr)
+library(microbenchmark)
 
 source("~/mids/scripts/greedy.R")
 
@@ -19,11 +20,13 @@ logr::log_print("Starting test - loading every instance and finding one solution
 for(i in 1:nrow(all_instances)){
     instance <- all_instances[i, ]
     logr::log_print(paste("Testing instance ", instance$name, " from ", instance$dataset, sep=""))
-    time <- system.time({
-        solution <- greedy(instance$name, instance$dataset)
-    })
-    logr::log_print(paste("Found solution length: ", length(solution)))
-    logr::log_print(paste("Elapsed time: ", time))
+    time <- microbenchmark::microbenchmark({
+        s <- greedy(instance$name, instance$dataset)
+    }, times = 1L)
+    logr::log_print(paste("Found solution length: ", s$i))
+    logr::log_print(paste("Number of iterations: ", s$iter))
+    # Time: converting nanoseconds to milliseconds
+    logr::log_print(paste("Elapsed time: ", mean(time$time)/1000000, " ms"))
 }
 
 # Close log
