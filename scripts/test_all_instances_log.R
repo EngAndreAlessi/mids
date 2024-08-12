@@ -19,8 +19,11 @@ logr::log_print("Starting test - loading every instance and finding one solution
 for(i in 1:nrow(all_instances)){
     instance <- all_instances[i, ]
     logr::log_print(paste("Testing instance ", instance$name, " from ", instance$dataset, sep=""))
-    solution <- greedy(instance$name, instance$dataset)
+    time <- system.time({
+        solution <- greedy(instance$name, instance$dataset)
+    })
     logr::log_print(paste("Found solution length: ", length(solution)))
+    logr::log_print(paste("Elapsed time: ", time))
 }
 
 # Close log
