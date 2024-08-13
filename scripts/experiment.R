@@ -44,8 +44,9 @@ logr::log_print("Setting up experiment variables... DONE")
 
 logr::log_print("Starting experiment")
 
-solution <- NULL
 solutions <- NULL
+times <- NULL
+iters <- NULL
 
 for(i in 1:nrow(experiment)){
     instance <- experiment[i, ]
@@ -55,20 +56,23 @@ for(i in 1:nrow(experiment)){
     logr::log_print(paste("Setting random seed to ", i, "...", sep=""))
     set.seed(i)
     logr::log_print("Setting random seed... DONE")
-    
-    solution <- greedy(instance$instances, instance$datasets)
-    logr::log_print(paste("Found solution length: ", length(solution)))
-    logr::log_print("Found solution:")
-    logr::log_print(solution)
-    solutions <- c(solutions, length(solution))
-    solution <- NULL
+    time <- microbenchmark::microbenchmark({
+        s <- greedy(instance$instances, instance$datasets)
+    }, times = 1L)
+    logr::log_print(paste("Found solution length: ", s$i))
+    logr::log_print(paste("Number of iterations: ", s$iter))
+    mean_time <- mean(time$time)/1000000
+    logr::log_print(paste("Elapsed time: ", mean_time, " ms"))
+    solutions <- c(solutions, s$i)
+    times <- c(times, mean_time)
+    iters <- c(iters, s$iter)
 }
 
 logr::log_print("Experiment DONE")
 
 logr::log_print("Writing results...")
 
-final_experiment <- tibble(experiment, solutions)
+final_experiment <- tibble(experiment, solutions, iters, times)
 
 write_csv(final_experiment, "data/results/results-raw.csv")
 
