@@ -1,49 +1,80 @@
 library(tidyverse)
+library(dunn.test)
 library(logr)
 
-log_open("logs/analysis.log")
+# Reading the necessary data
+instances <- read_csv("data/source/instances.csv", show_col_types = FALSE)
+results <- read_csv("data/results/results-raw.csv", show_col_types = FALSE)
+literature <- read_csv("data/source/literature_results.csv", show_col_types = FALSE)
+info <- read_csv("data/results/instances_info.csv", show_col_types = FALSE)
 
-log_print("Reading data...")
+# Summary
+results_summary <- results |>
+    group_by(instances) |>
+    summarise(avg = mean(solutions),
+              std = sd(solutions),
+              min = min(solutions))
 
-results <- read_csv("data/results/results-clean.csv", show_col_types = FALSE)
-graph_info <- read_csv("data/results/graph_info.csv", show_col_types = FALSE)
+# Write to a csv file
+write_csv(results_summary, "data/results/results-summary.csv")
 
-log_print("Reading data... DONE")
+# Get only the average to compare with literature results
+greedy_results <- results_summary |>
+    select(instances, avg)
 
-log_print("Mutating data...")
+literature <- literature |>
+    select(instance, dataset, avg, method)
 
-data <- inner_join(graph_info, results, by = join_by(names == name))
-data <- data |> rename("Greedy" = "avg", "MAE-PB" = "BKAV")
-data <- pivot_longer(data, cols = 5:6, names_to = "Method", values_to = "i(G)")
-data <- data |> mutate(percent_excess = (`i(G)` - lower_bounds)/lower_bounds)
-data <- data |> mutate(density = edges/(orders*(orders-1)/2))
+# Joining with instances data to get dataset column
+greedy_results <- inner_join(greedy_results, instances, by = join_by(instances == name))
 
-log_print("Mutating data... DONE")
+# Adding a column "method" with the value "greedy" and renaming column instances
+greedy_results <- greedy_results |>
+    mutate(method = "GREEDY") |>
+    rename(instance = instances)
 
-log_print("Creating plots...")
+# Combining tables greedy_results and literature by binding rows
+all_methods <- bind_rows(literature, greedy_results)
 
-ggplot(data, aes(x = Method, y = percent_excess, color = Method)) +
-    geom_boxplot()
+# Arranging by first column and converting necessary columns to factors
+all_methods <- all_methods |>
+    arrange(instance) |>
+    mutate(dataset = as_factor(dataset),
+           method = as_factor(method))
 
-ggplot(data = data, 
-       mapping = aes(x = density, y = percent_excess, color = Method)
-       ) +
-    geom_point() +
-    geom_smooth(method = "lm")
+# Saving this table
+write_csv(all_methods, "data/results/results-clean.csv")
 
-log_print("Creating plots... DONE")
+# Relative deviation from lower bound
+info_lbs <- info |>
+    select(instances, lbs)
 
-log_print("Starting wilcoxon test with 0.995 confidence level...")
+all_methods <- inner_join(all_methods, info_lbs, by = join_by(instance == instances))
 
-data2 <- data |> select(names, Method, percent_excess)
-data2 <- pivot_wider(data2, names_from = Method, values_from = percent_excess)
-mae <- data2$`MAE-PB`
-greedy <- data2$Greedy
+all_methods <- all_methods |>
+    mutate(ardp = (avg-lbs)/lbs * 100)
 
-w_test <- wilcox.test(greedy, mae, paired = TRUE, alternative = "less", conf.level = 0.995)
+# Creating a linear model
+model <- lm(ardp ~ method, data = all_methods)
 
-log_print("Wilcoxon test... DONE")
+# Getting the residuals
+res <- residuals(model)
 
-log_print(w_test)
+# Checking Q-Q plot
 
-log_close()
+qqnorm(res)
+qqline(res, col = "red")
+
+# Shapiro-Wilk normality test
+sw_test <- shapiro.test(res)
+
+# Very likely not normal, Kruskal-Wallis rank sum test
+kw_test <- kruskal.test(ardp ~ method, data = all_methods)
+
+# Wilcoxon Rank-Sum tests for each pair of methods
+w_test <- pairwise.wilcox.test(all_methods$ardp, all_methods$method, p.adjust.method = "bonferroni")
+
+# Boxplot
+ggplot(all_methods, aes(x = method, y = ardp)) +
+    geom_boxplot() +
+    theme_minimal()
