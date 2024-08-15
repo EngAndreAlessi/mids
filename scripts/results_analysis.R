@@ -61,6 +61,9 @@ all_methods <- dplyr::inner_join(all_methods, info_lbs, by = join_by(instance ==
 all_methods <- all_methods |>
     dplyr::mutate(ardp = (avg-lbs)/lbs * 100)
 
+all_methods <- all_methods |>
+    dplyr::mutate(log_ratio = log(avg/lbs))
+
 logr::log_print("Data cleaning DONE.")
 
 # Saving this table
@@ -71,7 +74,7 @@ logr::log_print("Cleaned data saved to data/results/results-clean.csv")
 logr::log_print("Starting statistical tests...")
 
 # Creating a linear model
-model <- lm(ardp ~ method, data = all_methods)
+model <- lm(log_ratio ~ method, data = all_methods)
 logr::log_print(model)
 
 # Getting the residuals
@@ -79,7 +82,7 @@ res <- residuals(model)
 
 # Checking Q-Q plot
 
-qqplot <- ggplot2::ggplot(all_methods, aes(sample = ardp)) +
+qqplot <- ggplot2::ggplot(all_methods, aes(sample = log_ratio)) +
     stat_qq() +
     theme_minimal() +
     labs(x = "Theoretical Quantiles", y = "Sample Quantiles")
@@ -92,15 +95,15 @@ sw_test <- shapiro.test(res)
 logr::log_print(sw_test)
 
 # Very likely not normal, Kruskal-Wallis rank sum test
-kw_test <- kruskal.test(ardp ~ method, data = all_methods)
+kw_test <- kruskal.test(log_ratio ~ method, data = all_methods)
 logr::log_print(kw_test)
 
 # Wilcoxon Rank-Sum tests for each pair of methods
-w_test <- pairwise.wilcox.test(all_methods$ardp, all_methods$method, p.adjust.method = "bonferroni")
+w_test <- pairwise.wilcox.test(all_methods$log_ratio, all_methods$method, p.adjust.method = "bonferroni")
 logr::log_print(w_test)
 
 # Boxplot
-g <- ggplot(all_methods, aes(x = method, y = ardp, color = method)) +
+g <- ggplot(all_methods, aes(x = method, y = log_ratio, color = method)) +
     geom_boxplot() +
     theme_minimal() +
     theme(legend.position = "none") +
