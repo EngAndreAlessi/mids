@@ -94,7 +94,7 @@ logr::log_print("QQ plot saved to data/plots/qqplot.png")
 sw_test <- shapiro.test(res)
 logr::log_print(sw_test)
 
-# Very likely not normal, Kruskal-Wallis rank sum test
+# Not enough evidence for normality, so Kruskal-Wallis rank sum test
 kw_test <- kruskal.test(log_ratio ~ method, data = all_methods)
 logr::log_print(kw_test)
 
@@ -103,13 +103,12 @@ w_test <- pairwise.wilcox.test(all_methods$log_ratio, all_methods$method, p.adju
 logr::log_print(w_test)
 
 # Boxplot
-g <- ggplot(all_methods, aes(x = method, y = log_ratio, color = method)) +
+g <- ggplot(all_methods, aes(x = method, y = log_ratio, fill = method)) +
     geom_boxplot() +
-    theme_minimal() +
     theme(legend.position = "none") +
-    labs(x = NULL, y = "RDP")
+    labs(x = "Methods", y = "log-rate")
 
-ggplot2::ggsave("data/plots/boxplot.png", g, width = 8, height = 6, dpi = 300)
+ggplot2::ggsave("data/plots/boxplot.png", g)
 logr::log_print("Boxplot saved to data/plots/boxplot.png")
 
 logr::log_print("ANALYSIS DONE")
