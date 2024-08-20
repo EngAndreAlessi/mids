@@ -72,10 +72,11 @@ greedy <- function(instance_name, instance_family, messages = FALSE){
         instance_graph <- igraph::delete_vertices(instance_graph, selected_node)
         
         # Remove zero degrees nodes
-        degrees <- igraph::degree(instance_graph)
-        zero_degrees <- names(degrees[degrees == 0])
-        instance_graph <- igraph::delete_vertices(instance_graph, zero_degrees)
-        solution <- c(solution, zero_degrees)
+        #degrees <- igraph::degree(instance_graph)
+        #zero_degrees <- names(degrees[degrees == 0])
+        #instance_graph <- igraph::delete_vertices(instance_graph, zero_degrees)
+        #solution <- c(solution, zero_degrees)
+        
         # Update n and iter
         n <- igraph::vcount(instance_graph)
         iter <- iter + 1
