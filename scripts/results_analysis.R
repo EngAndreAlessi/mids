@@ -70,6 +70,18 @@ logr::log_print("Data cleaning DONE.")
 readr::write_csv(all_methods, "data/results/results-clean.csv")
 logr::log_print("Cleaned data saved to data/results/results-clean.csv")
 
+# Creating time df
+results_time <- results |>
+    select(instances, times) |>
+    group_by(instances) |>
+    summarise(time_avg_ms = mean(times),
+              time_std_ms = sd(times)) |>
+    mutate(time_avg_ms = time_avg_ms/1000,
+           time_std_ms = time_std_ms/1000)
+# Saving time table
+readr::write_csv(results_time, "data/results/time_summary.csv")
+logr::log_print("Time data saved to data/results/time_summary.csv")
+
 # Statistical tests for all data
 logr::log_print("Starting statistical tests...")
 
@@ -105,7 +117,11 @@ logr::log_print(w_test)
 # Boxplot
 g <- ggplot(all_methods, aes(x = method, y = log_ratio, fill = method)) +
     geom_boxplot() +
-    theme(legend.position = "none") +
+    theme(legend.position = "none",
+          axis.title.x = element_text(size = 12),
+          axis.title.y = element_text(size = 12),
+          axis.text.x = element_text(size = 12),
+          axis.text.y = element_text(size = 12)) +
     labs(x = "Methods", y = "log-rate")
 
 ggplot2::ggsave("data/plots/boxplot.png", g)

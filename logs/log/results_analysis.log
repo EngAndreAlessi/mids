@@ -10,58 +10,63 @@ Base Packages: stats graphics grDevices utils datasets methods base
 Other Packages: logr_1.3.8 common_1.1.3 dunn.test_1.3.6 lubridate_1.9.3
 forcats_1.0.0 stringr_1.5.1 dplyr_1.1.4 purrr_1.0.2 readr_2.1.5 tidyr_1.3.1
 tibble_3.2.1 ggplot2_3.5.1 tidyverse_2.0.0
-Log Start Time: 2024-08-20 00:08:17.082293
+Log Start Time: 2024-09-04 20:50:23.877851
 =========================================================================
 
 STARTING RESULTS ANALYSIS
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.090611
-NOTE: Elapsed Time: 0.00227093696594238 secs
+NOTE: Log Print Time:  2024-09-04 20:50:23.897931
+NOTE: Elapsed Time: 0.00152707099914551 secs
 
 Reading the necessary data...
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.092943
-NOTE: Elapsed Time: 0.00233197212219238 secs
+NOTE: Log Print Time:  2024-09-04 20:50:23.899585
+NOTE: Elapsed Time: 0.00165390968322754 secs
 
 Reading data DONE.
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.506302
-NOTE: Elapsed Time: 0.41335916519165 secs
+NOTE: Log Print Time:  2024-09-04 20:50:24.622662
+NOTE: Elapsed Time: 0.723077058792114 secs
 
 Creating summary of results...
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.507831
-NOTE: Elapsed Time: 0.00152897834777832 secs
+NOTE: Log Print Time:  2024-09-04 20:50:24.624348
+NOTE: Elapsed Time: 0.00168585777282715 secs
 
 Creating summary DONE.
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.53272
-NOTE: Elapsed Time: 0.0248889923095703 secs
+NOTE: Log Print Time:  2024-09-04 20:50:24.655671
+NOTE: Elapsed Time: 0.0313229560852051 secs
 
 Summary saved to data/results/results-summary.csv
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.577514
-NOTE: Elapsed Time: 0.0447938442230225 secs
+NOTE: Log Print Time:  2024-09-04 20:50:24.691543
+NOTE: Elapsed Time: 0.035872220993042 secs
 
 Cleaning data...
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.579252
-NOTE: Elapsed Time: 0.00173807144165039 secs
+NOTE: Log Print Time:  2024-09-04 20:50:24.692952
+NOTE: Elapsed Time: 0.00140881538391113 secs
 
 Data cleaning DONE.
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.613723
-NOTE: Elapsed Time: 0.0344710350036621 secs
+NOTE: Log Print Time:  2024-09-04 20:50:24.728886
+NOTE: Elapsed Time: 0.0359339714050293 secs
 
 Cleaned data saved to data/results/results-clean.csv
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.846879
-NOTE: Elapsed Time: 0.233155965805054 secs
+NOTE: Log Print Time:  2024-09-04 20:50:25.142872
+NOTE: Elapsed Time: 0.413986206054688 secs
+
+Time data saved to data/results/time_summary.csv
+
+NOTE: Log Print Time:  2024-09-04 20:50:25.198681
+NOTE: Elapsed Time: 0.0558090209960938 secs
 
 Starting statistical tests...
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.848413
-NOTE: Elapsed Time: 0.00153398513793945 secs
+NOTE: Log Print Time:  2024-09-04 20:50:25.200595
+NOTE: Elapsed Time: 0.00191378593444824 secs
 
 
 Call:
@@ -72,13 +77,13 @@ Coefficients:
     1.7390827      0.0007618     -0.0275489      0.0003578      0.0103499     -0.0345425     -1.0359373  
 
 
-NOTE: Log Print Time:  2024-08-20 00:08:17.881431
-NOTE: Elapsed Time: 0.0330181121826172 secs
+NOTE: Log Print Time:  2024-09-04 20:50:25.24759
+NOTE: Elapsed Time: 0.0469951629638672 secs
 
 QQ plot saved to data/plots/qqplot.png
 
-NOTE: Log Print Time:  2024-08-20 00:08:18.725536
-NOTE: Elapsed Time: 0.844105005264282 secs
+NOTE: Log Print Time:  2024-09-04 20:50:26.614526
+NOTE: Elapsed Time: 1.36693596839905 secs
 
 
 	Shapiro-Wilk normality test
@@ -87,8 +92,8 @@ data:  res
 W = 0.96569, p-value = 6.921e-12
 
 
-NOTE: Log Print Time:  2024-08-20 00:08:18.731411
-NOTE: Elapsed Time: 0.0058748722076416 secs
+NOTE: Log Print Time:  2024-09-04 20:50:26.622732
+NOTE: Elapsed Time: 0.00820589065551758 secs
 
 
 	Kruskal-Wallis rank sum test
@@ -97,8 +102,8 @@ data:  log_ratio by method
 Kruskal-Wallis chi-squared = 129.59, df = 6, p-value < 2.2e-16
 
 
-NOTE: Log Print Time:  2024-08-20 00:08:18.742641
-NOTE: Elapsed Time: 0.0112299919128418 secs
+NOTE: Log Print Time:  2024-09-04 20:50:26.633312
+NOTE: Elapsed Time: 0.0105800628662109 secs
 
 
 	Pairwise comparisons using Wilcoxon rank sum test with continuity correction 
@@ -115,16 +120,16 @@ GREEDY  <2e-16 <2e-16  <2e-16 <2e-16 <2e-16 <2e-16
 
 P value adjustment method: bonferroni 
 
-NOTE: Log Print Time:  2024-08-20 00:08:18.766976
-NOTE: Elapsed Time: 0.0243351459503174 secs
+NOTE: Log Print Time:  2024-09-04 20:50:26.67096
+NOTE: Elapsed Time: 0.0376479625701904 secs
 
 Boxplot saved to data/plots/boxplot.png
 
-NOTE: Log Print Time:  2024-08-20 00:08:19.411734
-NOTE: Elapsed Time: 0.644757986068726 secs
+NOTE: Log Print Time:  2024-09-04 20:50:27.404428
+NOTE: Elapsed Time: 0.733468055725098 secs
 
 ANALYSIS DONE
 
-NOTE: Log Print Time:  2024-08-20 00:08:19.412996
-NOTE: Elapsed Time: 0.00126194953918457 secs
+NOTE: Log Print Time:  2024-09-04 20:50:27.405882
+NOTE: Elapsed Time: 0.00145387649536133 secs
 
